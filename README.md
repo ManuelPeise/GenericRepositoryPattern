@@ -2,7 +2,8 @@
 # Description
 Web API using a generic repository with Entity Framework Core with MySql database
 # Web
-Includes the startup project where the project ist configured an the database context is injected.
+- Web.Api Includes the startup project where the project ist configured an the database context is injected.
+- Web.Client Is a simple UI to view and add data.
 # Service
 - Service.User provides a endpoint(s) to add or get the user data from database.
 # BusinessLogic

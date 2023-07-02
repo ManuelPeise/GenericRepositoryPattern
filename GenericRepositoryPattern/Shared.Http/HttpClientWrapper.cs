@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Shared.Http.Interfaces;
 using System.Net;
+using System.Net.Http.Json;
 using System.Text;
 
 namespace Shared.Http
@@ -35,12 +36,12 @@ namespace Shared.Http
                 }
             }
 
-            return null;
+            return default;
         }
 
         public async Task<bool> Post(string controller, string endpoint, T model)
         {
-            var url = $"{controller}/{endpoint}";
+            var url = $"{controller}{endpoint}";
 
             using (var client = new HttpClient())
             {
@@ -49,12 +50,18 @@ namespace Shared.Http
                     Version = HttpVersion.Version20,
                     Method = HttpMethod.Post,
                     RequestUri = new Uri(url),
-                    Content = new StringContent(JsonConvert.SerializeObject(model), Encoding.UTF8, "application/json")
+                    Content = JsonContent.Create(model, typeof(T))
                 };
 
-                using (var response = await client.SendAsync(requestMessage))
+                var response = await client.SendAsync(requestMessage);
+
+                if (response.IsSuccessStatusCode)
                 {
                     return await Task.FromResult(response.IsSuccessStatusCode);
+                }
+                else
+                {
+                    return false;
                 }
             }
         }

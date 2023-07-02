@@ -13,8 +13,6 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
     options.UseMySQL(connection);
 });
 
-builder.Services.AddTransient<IHttpClientWrapper<RequestModel>, HttpClientWrapper<RequestModel>>();
-
 // Add services to the container.
 
 builder.Services.AddControllers();

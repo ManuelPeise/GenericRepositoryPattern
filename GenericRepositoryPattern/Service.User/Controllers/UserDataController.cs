@@ -26,6 +26,15 @@ namespace Service.User.Controllers
             }
         }
 
+        [HttpGet(Name = "GetAllUsers")]
+        public async Task<List<UserData>> GetAllUsers()
+        {
+            using (var service = new UserService(_context))
+            {
+                return await service.GetUsers();
+            }
+        }
+
         [HttpPost(Name = "AddUser")]
         public async Task AddUser([FromBody] UserImportModel model)
         {

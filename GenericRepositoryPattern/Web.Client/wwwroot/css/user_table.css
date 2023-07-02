@@ -1,0 +1,39 @@
+﻿.table {
+  padding: 10px;
+}
+
+.table:not(:last-child) {
+  border-bottom-color: lightgray !important;
+}
+
+.table_head {
+  padding: 5px;
+  border: 2px solid lightgray;
+}
+
+.table_header_row {
+  background: transparent;
+  padding: 5px;
+}
+
+.table_body {
+  border: 2px solid lightgray;
+}
+
+.table_body_cell,
+.header_cell {
+  border-right: 2px solid lightgray;
+}
+
+.table_body_cell:last-child,
+.header_cell:last-child {
+  border-right: none;
+}
+
+.header_cell:first-child {
+  border-left: 2px solid lightgray;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}

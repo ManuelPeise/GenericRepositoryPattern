@@ -17,15 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Api", "Web.Api\Web.Api.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.AppContext", "Data.AppContext\Data.AppContext.csproj", "{53D78156-78D1-4D6E-910F-3C6D26D714E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.AppContext", "Shared.AppContext\Shared.AppContext.csproj", "{836A46C6-96B0-4AAA-9E0E-7A4BA7706F33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.AppContext", "Shared.AppContext\Shared.AppContext.csproj", "{836A46C6-96B0-4AAA-9E0E-7A4BA7706F33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Shared", "BusinessLogic.Shared\BusinessLogic.Shared.csproj", "{0C9B1F5B-5343-492F-8ED7-422393CC9F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Shared", "BusinessLogic.Shared\BusinessLogic.Shared.csproj", "{0C9B1F5B-5343-492F-8ED7-422393CC9F1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.User", "BusinessLogic.User\BusinessLogic.User.csproj", "{5E6CEF31-BF54-474B-A231-A61DE18D7B81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.User", "BusinessLogic.User\BusinessLogic.User.csproj", "{5E6CEF31-BF54-474B-A231-A61DE18D7B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.User", "Service.User\Service.User.csproj", "{7CC4989D-97F2-46C0-8080-6749206AE937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.User", "Service.User\Service.User.csproj", "{7CC4989D-97F2-46C0-8080-6749206AE937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Http", "Shared.Http\Shared.Http.csproj", "{B35F2E71-DAE6-4B9A-9820-FC3F39605721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Http", "Shared.Http\Shared.Http.csproj", "{B35F2E71-DAE6-4B9A-9820-FC3F39605721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Client", "Web.Client\Web.Client.csproj", "{3840D7E0-9F47-453D-BB18-835EDD7A82BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{B35F2E71-DAE6-4B9A-9820-FC3F39605721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B35F2E71-DAE6-4B9A-9820-FC3F39605721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B35F2E71-DAE6-4B9A-9820-FC3F39605721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3840D7E0-9F47-453D-BB18-835EDD7A82BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3840D7E0-9F47-453D-BB18-835EDD7A82BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3840D7E0-9F47-453D-BB18-835EDD7A82BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3840D7E0-9F47-453D-BB18-835EDD7A82BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{5E6CEF31-BF54-474B-A231-A61DE18D7B81} = {A66EB95A-B077-484B-A887-09E8E96EF142}
 		{7CC4989D-97F2-46C0-8080-6749206AE937} = {7F77BB6E-D224-4392-AD15-369A65DC28B0}
 		{B35F2E71-DAE6-4B9A-9820-FC3F39605721} = {8F43BED0-A5A7-4BCA-B56A-B1EDA1C06B43}
+		{3840D7E0-9F47-453D-BB18-835EDD7A82BC} = {3919F5B1-7B59-4D48-A503-62F468300827}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16173D0C-2871-4003-83E8-6705E496BA1D}

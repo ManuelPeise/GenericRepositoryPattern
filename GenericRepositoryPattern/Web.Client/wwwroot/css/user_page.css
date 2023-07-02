@@ -1,0 +1,66 @@
+﻿.form_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  padding: 2rem;
+  border: 2px solid lightblue;
+  border-radius: 20px;
+}
+
+.title_container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.form_control_Item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.formItem label {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.formItem input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 2px solid lightgray;
+  outline: none;
+}
+
+.form_control_Item input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  font-size: 22px;
+  width: 8rem;
+}
+
+.form_control_Item input[type="submit"]:disabled {
+  background-color: lightgray;
+}

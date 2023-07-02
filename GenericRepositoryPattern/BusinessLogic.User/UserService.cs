@@ -59,6 +59,11 @@ namespace BusinessLogic.User
             return await Task.FromResult(userData);
         }
 
+        public async Task<List<UserData>> GetUsers()
+        {
+            return await _userDataRepo.GetAllEntitiesAsync();
+        }
+
         #region private members
 
         private string GetEncodedPassword(string encodedPassword, Guid salt)
@@ -92,6 +97,7 @@ namespace BusinessLogic.User
             Dispose(disposing: true);
             GC.SuppressFinalize(this);
         }
+
 
         #endregion
     }

@@ -1,0 +1,40 @@
+﻿@page
+@model Web.Client.Pages.UsersModel
+@{
+
+}
+
+<section style="display:flex; justify-content:center;">
+    <div id="user_list" style="width:50vw; border-radius: 10px; padding: 2rem;">
+        <h3 style="padding:1rem;">Existing Users</h3>
+        <table class="table">
+            <thead class="table_head">
+                <tr class="table_header_row">
+                    <td class="header_cell">UserId</td>
+                    <td class="header_cell">Firstname</td>
+                    <td class="header_cell">Lastname</td>
+                    <td class="header_cell">Username</td>
+                </tr>
+            </thead>
+            <tbody class="table_body">
+                @foreach (var user in Model.UserCollection)
+                {
+                    <tr>
+                        <td class="table_body_cell">
+                            <label class="cell_value">@user.Id</label>
+                        </td>
+                        <td class="table_body_cell">
+                            <label class="cell_value">@user.FirstName</label>
+                        </td>
+                        <td class="table_body_cell">
+                            <label class="cell_value">@user.LastName</label>
+                        </td>
+                        <td class="table_body_cell">
+                            <label class="cell_value">@user.UserName</label>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>

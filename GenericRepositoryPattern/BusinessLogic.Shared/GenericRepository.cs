@@ -74,7 +74,9 @@ namespace BusinessLogic.Shared
         {
             try
             {
-                var entries = (List<T>)_context.Find(typeof(T));
+                var table = _context.Set<T>();
+
+                var entries = table.ToList();
 
                 if (entries?.Count > 0)
                 {

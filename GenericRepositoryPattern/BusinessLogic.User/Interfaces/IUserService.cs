@@ -7,5 +7,6 @@ namespace BusinessLogic.User.Interfaces
     {
         Task<int> AddUser(UserImportData userData, UserImportAuthData authData);
         Task<UserData?> GetUser(string userName);
+        Task<List<UserData>> GetUsers();
     }
 }

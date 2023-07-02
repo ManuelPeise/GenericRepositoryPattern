@@ -1,0 +1,36 @@
+﻿@page
+@model Web.Client.Pages.AddUserModel
+@{
+
+}
+
+<div class="form_container">
+    <div class="title_container">
+        <h2>Add new User</h2>
+    </div>
+    <form class="formContainer" method="post" asp-action="OnPost">
+        <div class="formItem">
+            <label>Firstname</label>
+            <input type="text" name="firstName" autocomplete="off" />
+        </div>
+        <div class="formItem">
+            <label>Lastname</label>
+            <input type="text" name="lastName" autocomplete="off" />
+        </div>
+        <div class="formItem">
+            <label class="formLabel">Username</label>
+            <input type="text" name="userName" autocomplete="off"/>
+        </div>
+        <div class="formItem">
+            <label>Email</label>
+            <input type="email" name="email" autocomplete="off"/>
+        </div>
+        <div class="formItem">
+            <label>Password</label>
+            <input type="password" name="password" autocomplete="off"/>
+        </div>
+        <div class="form_control_Item">
+            <input type="submit" value="Speichern">
+        </div>
+    </form>
+</div>

@@ -1,5 +1,8 @@
 using Data.AppContext;
 using Microsoft.EntityFrameworkCore;
+using Shared.Http;
+using Shared.Http.Interfaces;
+using Shared.Http.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,8 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
 
     options.UseMySQL(connection);
 });
+
+builder.Services.AddTransient<IHttpClientWrapper<RequestModel>, HttpClientWrapper<RequestModel>>();
 
 // Add services to the container.
 

@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Data.AppContext\Data.AppContext.csproj" />
     <ProjectReference Include="..\Service.User\Service.User.csproj" />
+    <ProjectReference Include="..\Shared.Http\Shared.Http.csproj" />
   </ItemGroup>
 
 </Project>
